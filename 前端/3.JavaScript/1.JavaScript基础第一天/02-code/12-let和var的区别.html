@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 作用域：
+
+    // var 声明的变量具有函数作用域（function-scoped）或者全局作用域（global-scoped），如果在一个函数内部声明，则该变量只能在该函数内部访问。
+    // let 声明的变量具有块作用域（block-scoped），这意味着它可以在任何包含它的代码块内（例如循环、条件语句等）访问。
+    // 变量提升：
+
+    // var 声明的变量会发生变量提升，即变量可以在声明之前使用，但只会被赋值为 undefined。
+    // let 声明的变量不会发生变量提升，如果尝试在声明之前访问 let 变量，会抛出一个 ReferenceError。
+    // 重复声明：
+
+    // 使用 var 可以在同一个作用域内多次声明同一个变量，但后面的声明会覆盖前面的值。
+    // 使用 let 在同一个作用域内不能重复声明同一个变量，如果尝试这样做，会抛出一个 SyntaxError。
+    // 全局对象属性：
+
+    // 当使用 var 在全局作用域内声明变量时，该变量会成为全局对象（在浏览器中是 window 对象）的属性。
+    // 使用 let 在全局作用域内声明的变量不会成为全局对象的属性。
+    // ES版本：
+
+    // var 是早期的ES5标准引入的。
+    // let 是ES6（ECMAScript 2015）标准引入的，提供了更现代的变量声明方式。
+
+    
+    // var num
+    // console.log(num)
+    // num = 10
+    // num = 10
+    // console.log(num)
+    // var num
+    // var num = 10
+    // var num = 20
+    // console.log(num)
+    // num = 10
+    // console.log(num)
+    // let num
+    // let num = 20
+    // let num = 10
+    // console.log(num)
+  </script>
+</body>
+
+</html>

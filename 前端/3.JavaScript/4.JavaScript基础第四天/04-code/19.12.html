@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let s = +prompt('s？')
+
+    function getTime() {
+      let h = parseInt(s / 3600)
+      let m = parseInt(s / 60 % 60)
+      let s2 = parseInt(s % 60)
+
+      h = h > 0 ? h : 0
+      m = m > 0 ? m : 0
+      s2 = s2 > 0 ? s2 : 0
+
+      return `${h}  ${m}  ${s2}`
+    }
+    let str = getTime()
+
+    document.write(str)
+    document.write(m)
+    document.write(s)
+  </script>
+</body>
+
+</html>
